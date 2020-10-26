@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	cobra "github.com/hupf3/mycobra"
+	cobra "github.com/bobbaicloudwithpants/bobra"
 )
 
 var pinfo = &cobra.Command{

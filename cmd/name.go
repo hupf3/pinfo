@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	cobra "github.com/hupf3/mycobra"
+	cobra "github.com/bobbaicloudwithpants/bobra"
 )
 
 var name = &cobra.Command{
