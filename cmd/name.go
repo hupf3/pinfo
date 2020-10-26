@@ -9,7 +9,7 @@ import (
 var name = &cobra.Command{
 	Use:   "name",
 	Short: "name stores and shows your name.",
-	Long:  "name contains three parameters, '-fa' : famliy name; '-g' : given name; '-fu' : full name.",
+	Long:  "name contains three parameters, '-f' : famliy name; '-g' : given name; '-a' : full name.",
 	Run: func(cmd *cobra.Command, args []string) {
 		if ok, _ := cmd.Flags().GetBool("famliy name"); ok {
 			fmt.Println("Hu")
@@ -22,8 +22,8 @@ var name = &cobra.Command{
 }
 
 func init() {
-	name.Flags().BoolP("famliy name", "fa", false, "whether show famliy name")
+	name.Flags().BoolP("famliy name", "f", false, "whether show famliy name")
 	name.Flags().BoolP("given name", "g", false, "whether show given name")
-	name.Flags().BoolP("full name", "fu", false, "whether show full name")
+	name.Flags().BoolP("full name", "a", false, "whether show full name")
 	pinfo.AddCommand(name)
 }
